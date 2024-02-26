@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+        <beans>
+        	<bean id="a" class="com.secondary.Address">
+        		<property name="area_Name" value="Tinkhadi"></property>
+        		<property name="city_Name" value="Pathardi"></property>
+        	</bean>
+        
+        	<bean id="s" class="com.secondary.Student">
+        		<property name="s_Id" value="101"></property>
+        		<property name="s_Name" value="Jay"></property>
+        		<property name="addrs" ref="a"></property>
+        	</bean>
+        
+        </beans>
+        
+        
