@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+		<beans>
+			<bean id="a" class="com.byType_autowire_candidate.Address">
+				<property name="area_Name" value="Tinkadi"></property>
+				<property name="city_Name" value="Pathardi"></property>
+			</bean>
+			
+			<bean id="a1" class="com.byType_autowire_candidate.Address " autowire-candidate="false">
+				<property name="area_Name" value="Tinkadi"></property>
+				<property name="city_Name" value="Pathardi"></property>
+			</bean>
+			
+			<bean id="s" class="com.byType_autowire_candidate.Student" autowire="byType">
+				<property name="s_Id" value="101"></property>
+				<property name="s_Name" value="Jay"></property>
+			</bean>
+		</beans>
+		
+		

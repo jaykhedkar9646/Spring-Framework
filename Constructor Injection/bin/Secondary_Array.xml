@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+        <beans>
+        	<bean id="M1" class="com.secondary_array.Mobile">
+        		<constructor-arg value="8554868205"></constructor-arg>
+        	</bean>
+        	
+        	<bean id="M2" class="com.secondary_array.Mobile">
+        		<constructor-arg value="9763256929"></constructor-arg>
+        	</bean>
+        	
+        	<bean id="s" class="com.secondary_array.Student">
+        		<constructor-arg value="101"></constructor-arg>
+        		<constructor-arg value="Jay"></constructor-arg>
+        		<constructor-arg>
+        			<list>
+        				<ref bean="M1"></ref>
+        				<ref bean="M2"></ref>
+        			</list>
+        		</constructor-arg>
+        	</bean>
+        	
+        </beans>
+        
+        
+        
+        
+        
+        
+        
+  

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+        <beans>
+        	<bean id="a" class="com.autodetect.Address">
+        		<constructor-arg value="Tinkhadi"></constructor-arg>
+        		<constructor-arg value="Pathardi"></constructor-arg>
+        		<property name="area_Name" value="Dahiwandi"></property>
+        		<property name="city_Name" value="Shirur"></property>
+        	</bean>
+        	
+        	<bean id="s" class="com.autodetect.Student" autowire="autodetect">
+        		<constructor-arg value="101" type="int"></constructor-arg>
+        		<constructor-arg value="Jay"></constructor-arg>
+        		<property name="s_Id" value="102"></property>
+        		<property name="s_Name" value="Amol"></property>
+        	</bean>
+        </beans>
+        
+        
+        
+        
+        
+        
